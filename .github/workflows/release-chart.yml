@@ -31,7 +31,7 @@ jobs:
           cp /tmp/charts/*.tgz ./
       - name: Generate index.yaml
         run: |
-          helm repo index charts --url https://azapatamoli.github.io/metal-community-service
+          helm repo index . --url https://azapatamoli.github.io/metal-community-service
       - name: Commit and push changes
         run: |
           git add charts
