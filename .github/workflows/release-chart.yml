@@ -27,7 +27,7 @@ jobs:
           git config --global user.name "Alejandro Zapata"
           git fetch origin gh-pages
           git switch gh-pages
-          git rm -rf . || true
+          rm -f *.tgz || true
           cp /tmp/charts/*.tgz ./
       - name: Generate index.yaml
         run: |
