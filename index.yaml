@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  metal-community-service:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-04-22T21:11:15.518172295Z"
+    description: A Helm chart for the metal community service
+    digest: ada7199405b674bb9a801109705b712e17e876b7916578dd8095ddf474d3d0d0
+    name: metal-community-service
+    type: application
+    urls:
+    - https://azapatamoli.github.io/metal-community-service/metal-community-service-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-04-22T21:11:15.51765497Z"
