@@ -27,11 +27,10 @@ jobs:
           git fetch origin gh-pages
           git switch gh-pages
           mkdir -p charts
-          mv chart-packages/*.tgz charts/
+          mv chart-packages/*.tgz .
       - name: Generate index.yaml
         run: |
-          helm repo index charts --url https://azapatamoli.github.io/metal-community-service/charts
-          mv charts/* .
+          helm repo index charts --url https://azapatamoli.github.io/metal-community-service
       - name: Commit and push changes
         run: |
           git add charts
