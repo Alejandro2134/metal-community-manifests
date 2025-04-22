@@ -22,12 +22,12 @@ jobs:
           helm package ./metal-community-service --destination chart-packages
       - name: Checkout gh-pages branch
         run: |
-          git config --global user.email "azapatamoli@gmail.com"
+          git config --global user.email "zapatamolinaalejandro@gmail.com"
           git config --global user.name "Alejandro Zapata"
           git fetch origin gh-pages
           git switch gh-pages
-          mkdir -p charts
-          mv chart-packages/*.tgz .
+          git rm -rf .
+          mv ../chart-packages/*.tgz ./
       - name: Generate index.yaml
         run: |
           helm repo index charts --url https://azapatamoli.github.io/metal-community-service
