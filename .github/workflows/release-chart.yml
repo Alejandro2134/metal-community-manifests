@@ -34,6 +34,6 @@ jobs:
           helm repo index . --url https://azapatamoli.github.io/metal-community-service
       - name: Commit and push changes
         run: |
-          git add charts
+          git add .
           git commit -m "Update Helm chart"
           git push origin gh-pages
