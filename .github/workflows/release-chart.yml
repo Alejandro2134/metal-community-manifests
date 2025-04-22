@@ -31,6 +31,7 @@ jobs:
       - name: Generate index.yaml
         run: |
           helm repo index charts --url https://azapatamoli.github.io/metal-community-service/charts
+          mv charts/* .
       - name: Commit and push changes
         run: |
           git add charts
