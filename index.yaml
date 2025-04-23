@@ -3,12 +3,12 @@ entries:
   metal-community-service:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-04-23T00:26:09.580440143Z"
+    created: "2025-04-23T00:27:14.099341293Z"
     description: A Helm chart for the metal community service
-    digest: e6cc14149165433fa9b110e0091560e9211ef1b37764eec84829b0dfeb66cc3f
+    digest: 7cf4584376782ee7e345002a5f60dce305dbb88e91e1f89f1337a0302d789c1d
     name: metal-community-service
     type: application
     urls:
     - https://alejandro2134.github.io/metal-community-manifests/metal-community-service-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-23T00:26:09.578985541Z"
+generated: "2025-04-23T00:27:14.098833887Z"
