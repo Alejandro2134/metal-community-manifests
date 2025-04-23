@@ -31,7 +31,7 @@ jobs:
           cp /tmp/charts/*.tgz ./
       - name: Generate index.yaml
         run: |
-          helm repo index . --url https://alejandro2134.github.io/metal-community-manifests
+          helm repo index . --url https://alejandro2134.github.io/metal-community-manifests --merge index.yaml
       - name: Commit and push changes
         run: |
           git add .
