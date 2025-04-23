@@ -37,3 +37,9 @@ jobs:
           git add .
           git commit -m "Update Helm chart"
           git push origin gh-pages
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
